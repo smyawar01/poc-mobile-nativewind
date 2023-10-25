@@ -31,7 +31,8 @@ const themeTest = {
     secondary: 'blue',
   },
 };
-
+// const StyledText = styled(Text);
+// const StyledTouchableOpacity = styled(TouchableOpacity);
 const Button = ({variant = 'primary', label, onClick}: Props) => {
   const {theme} = useThemeProvider();
   const color = themeTest[theme][variant];
@@ -40,8 +41,8 @@ const Button = ({variant = 'primary', label, onClick}: Props) => {
     <TouchableOpacity
       className={`bg-${color}-500 text-white px-4 py-2 rounded-lg`}
       onPress={onClick}>
-      <View className={`bg-${color}-500 text-white px-4 py-2 rounded-lg`}>
-        <Text className="text-white">{label}</Text>
+      <View>
+        <Text className="text-red">{label}</Text>
       </View>
     </TouchableOpacity>
   );

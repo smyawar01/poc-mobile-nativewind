@@ -14,5 +14,5 @@ export const Basic: ComponentStory<typeof Button> = args => (
 );
 
 Basic.args = {
-  label: 'Hello',
+  label: 'Hello World',
 };
